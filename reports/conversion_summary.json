@@ -1,0 +1,17 @@
+{
+  "train": {
+    "images": 8219,
+    "boxes": 1193564,
+    "dropped_rows": 14918
+  },
+  "val": {
+    "images": 588,
+    "boxes": 89937,
+    "dropped_rows": 1031
+  },
+  "test": {
+    "images": 2936,
+    "boxes": 426335,
+    "dropped_rows": 5211
+  }
+}

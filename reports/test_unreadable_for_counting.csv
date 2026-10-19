@@ -1,0 +1,2 @@
+image,reason
+test_274.jpg,OSError('image file is truncated (14 bytes not processed)')

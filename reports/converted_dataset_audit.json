@@ -1,0 +1,20 @@
+{
+  "train": {
+    "images": 8219,
+    "labels": 8219,
+    "boxes": 1193564,
+    "bad_label_lines": 0
+  },
+  "val": {
+    "images": 588,
+    "labels": 588,
+    "boxes": 89937,
+    "bad_label_lines": 0
+  },
+  "test": {
+    "images": 2936,
+    "labels": 2936,
+    "boxes": 426335,
+    "bad_label_lines": 0
+  }
+}

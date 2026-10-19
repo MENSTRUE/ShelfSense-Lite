@@ -1,0 +1,13 @@
+image,gt_count,pred_count,error
+test_714.jpg,140,147,7
+test_1408.jpg,188,187,-1
+test_109.jpg,135,136,1
+test_2015.jpg,122,100,-22
+test_1904.jpg,119,131,12
+test_1824.jpg,136,127,-9
+test_1511.jpg,134,126,-8
+test_1375.jpg,171,207,36
+test_851.jpg,266,219,-47
+test_367.jpg,126,131,5
+test_1318.jpg,133,122,-11
+test_533.jpg,112,113,1

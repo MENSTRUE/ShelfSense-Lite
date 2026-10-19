@@ -1,0 +1,115 @@
+{
+  "project": "ShelfSense Lite",
+  "portfolio_progress": "11%",
+  "dataset": "SKU-110K",
+  "task": "single-class dense retail-product object detection",
+  "derived_task": "visible-product counting from detections",
+  "model": "YOLO11s",
+  "input_size": 960,
+  "class_names": [
+    "object"
+  ],
+  "training_history": {
+    "best_epoch": 30,
+    "epochs_completed": 36,
+    "precision": 0.91177,
+    "recall": 0.87349,
+    "mAP50": 0.93585,
+    "mAP50_95": 0.58545
+  },
+  "evaluation_protocol": {
+    "official_split_preserved": true,
+    "validation_max_det": 800,
+    "test_max_det": 800,
+    "count_threshold_selected_on": "validation only"
+  },
+  "validation_detection": {
+    "precision": 0.9119463084161766,
+    "recall": 0.8735668457424569,
+    "mAP50": 0.9358892967255817,
+    "mAP50_95": 0.5866980113205288,
+    "max_det": 800,
+    "speed_ms": {
+      "preprocess": 1.5650236020409694,
+      "inference": 14.589159899661094,
+      "loss": 0.023230192177803463,
+      "postprocess": 6.759091486392022
+    }
+  },
+  "official_test_detection": {
+    "precision": 0.9106692193164472,
+    "recall": 0.8819945144283673,
+    "mAP50": 0.9435687018998892,
+    "mAP50_95": 0.591797545318477,
+    "max_det": 800,
+    "speed_ms": {
+      "preprocess": 1.4232192514481612,
+      "inference": 12.70996382043936,
+      "loss": 0.003249400680967717,
+      "postprocess": 2.2288498739345344
+    }
+  },
+  "counting": {
+    "confidence": 0.3,
+    "official_test": {
+      "n": 2935,
+      "MAE": 12.949914821124361,
+      "RMSE": 22.97501791165539,
+      "bias": 1.9202725724020442,
+      "mean_gt": 145.2160136286201,
+      "mean_pred": 147.13628620102216
+    },
+    "error_summary": {
+      "abs_error_p50": 7.0,
+      "abs_error_p75": 15.0,
+      "abs_error_p90": 30.0,
+      "abs_error_p95": 49.0,
+      "max_under_count": -232,
+      "max_over_count": 173
+    }
+  },
+  "dataset_audit": {
+    "train": {
+      "images": 8219,
+      "raw_rows": 1208482,
+      "valid_rows": 1193564,
+      "invalid_rows": 14918
+    },
+    "val": {
+      "images": 588,
+      "raw_rows": 90968,
+      "valid_rows": 89937,
+      "invalid_rows": 1031
+    },
+    "test": {
+      "images": 2936,
+      "raw_rows": 431546,
+      "valid_rows": 426335,
+      "invalid_rows": 5211
+    }
+  },
+  "conversion": {
+    "train": {
+      "images": 8219,
+      "boxes": 1193564,
+      "dropped_rows": 14918
+    },
+    "val": {
+      "images": 588,
+      "boxes": 89937,
+      "dropped_rows": 1031
+    },
+    "test": {
+      "images": 2936,
+      "boxes": 426335,
+      "dropped_rows": 5211
+    }
+  },
+  "limitations": [
+    "Single generic object class only.",
+    "No SKU identity recognition.",
+    "Visible-product counting is detection-derived.",
+    "Occluded and very small products can be missed.",
+    "Visible count is not hidden inventory count."
+  ]
+}
