@@ -1,0 +1,7 @@
+path: /kaggle/working/shelfsense_11pct_final_v3/dataset_yolo
+train: images/train
+val: images/val
+test: images/test
+nc: 1
+names:
+- object
